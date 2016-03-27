@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AA8CF531CA7F0510033E799 /* chopin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8CF521CA7F0510033E799 /* chopin.wav */; };
 		1AA8CF561CA7FBB60033E799 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF551CA7FBB60033E799 /* AudioFile.m */; };
+		1AA8CF5A1CA80E980033E799 /* liszt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8CF591CA80E980033E799 /* liszt.mp3 */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -68,6 +69,7 @@
 		1AA8CF521CA7F0510033E799 /* chopin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chopin.wav; sourceTree = "<group>"; };
 		1AA8CF541CA7FBB60033E799 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
 		1AA8CF551CA7FBB60033E799 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
+		1AA8CF591CA80E980033E799 /* liszt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = liszt.mp3; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* mySketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -245,6 +247,7 @@
 				4F28D8721C4A8DDC00D666C5 /* particle.png */,
 				4FDC97A31C4C312000E512EB /* particle2.png */,
 				1AA8CF521CA7F0510033E799 /* chopin.wav */,
+				1AA8CF591CA80E980033E799 /* liszt.mp3 */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				4FF2AD9F1C42F99600862343 /* Launch Screen.storyboard in Resources */,
 				4FF2AD971C42ECFE00862343 /* Icon@2x.png in Resources */,
 				4FF2AD941C42ECFE00862343 /* Icon-72.png in Resources */,
+				1AA8CF5A1CA80E980033E799 /* liszt.mp3 in Resources */,
 				1AA8CF531CA7F0510033E799 /* chopin.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

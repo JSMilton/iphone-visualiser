@@ -4,6 +4,7 @@
 #include "Constants.h"
 #include "ParticleGroup.hpp"
 #include "ofxMaxim.h"
+#import "AudioFile.h"
 
 static const size_t numFrequencyBands = 18;
 static const size_t fftSize = 1024;
@@ -54,8 +55,6 @@ public:
     float velocity;
     float force;
 
-    maxiSample audioSampleLeft;
-    maxiSample audioSampleRight;
     maxiFFT fft;
     
     float frequencies[numFrequencyBands];
@@ -73,6 +72,8 @@ public:
     int colorMode = ColorModeRed;
     
     ofRectangle containingRect;
+    
+    AudioFile *aFile;
     
 };
 

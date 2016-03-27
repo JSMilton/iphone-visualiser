@@ -30,16 +30,6 @@ void ofApp::setup(){
     camera.setPosition(initialPosition);
     camera.lookAt(ofVec3f(0));
     
-    string file = ofToDataPath("chopin.wav");
-    
-    audioSampleLeft.load(file);
-    audioSampleLeft.getLength();
-    
-    if (audioSampleLeft.myChannels == 2){
-        audioSampleRight.load(file, 1);
-        audioSampleRight.getLength();
-    }
-    
     fft.setup(fftSize, bufferSize, bufferSize/2);
     ofxMaxiSettings::setup(sampleRate, outputChannels, bufferSize);
     ofSoundStreamSetup(outputChannels, 0, sampleRate, bufferSize, 4);
@@ -61,6 +51,9 @@ void ofApp::setup(){
     
     colorScaling = 1;
     colorMode = ColorModeBlue;
+    
+    aFile = [AudioFile new];
+    [aFile loadFile:@"liszt.mp3"];
 }
 
 void ofApp::changeColor() {
@@ -146,15 +139,6 @@ void ofApp::draw(){
     particleImage.unbind();
     shader.end();
     camera.end();
-    
-//    ofSetColor(255, 0, 0,255);
-//    
-//    for (size_t i = 0; i < numFrequencyBands; i++){
-//        float height = ofGetHeight() / 2;
-//        float x = (ofGetWidth() / numFrequencyBands) * i;
-//        float y = ofMap(frequencies[i], 0, 100, 0, height);
-//        ofDrawRectangle(x, height-y, 20, y);
-//    }
 }
 
 void ofApp::updateVelocity() {
@@ -225,13 +209,13 @@ void ofApp::deviceOrientationChanged(int newOrientation){
 void ofApp::audioOut(ofSoundBuffer &buffer){
     //if (playing){
         for (size_t i = 0; i < buffer.size(); i+=2){
-            float sampleLeft = audioSampleLeft.play();
-            float sampleRight = audioSampleRight.length > 0 ? audioSampleRight.play() : sampleLeft;
+            float sampleLeft = [aFile playLeft];
+            float sampleRight = aFile.isStereo ? [aFile playRight] : sampleLeft;
             buffer[i] = sampleLeft;
             buffer[i+1] = sampleRight;
             
-            buffer[i] = 0;
-            buffer[i+1] = 0;
+//            buffer[i] = 0;
+//            buffer[i+1] = 0;
             
             fft.process(sampleLeft+sampleRight);
         }

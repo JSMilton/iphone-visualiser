@@ -15,7 +15,8 @@
     Float32 *rightData;
     int channelCount;
     UInt64 totalFrames;
-    UInt64 sampleCount;
+    UInt64 sampleCountLeft;
+    UInt64 sampleCountRight;
 }
 
 - (void)loadFile:(NSString *)filename
@@ -29,12 +30,21 @@
     ExtAudioFileRef audioFileObject = 0;
     OSStatus result = ExtAudioFileOpenURL ((CFURLRef)url, &audioFileObject);
     
+    if (noErr != result) {
+        NSLog(@"Error: Failed to read audio file at url");
+        return;
+    }
+    
+    totalFrames = 0;
+    UInt32 frameLengthPropertySize = sizeof (totalFrames);
+    
     result =    ExtAudioFileGetProperty (
                                          audioFileObject,
                                          kExtAudioFileProperty_FileLengthFrames,
-                                         sizeof (totalFrames),
+                                         &frameLengthPropertySize,
                                          &totalFrames
                                          );
+    
     
     if (noErr != result) {
         NSLog(@"Error: ExtAudioFileGetProperty");
@@ -42,15 +52,17 @@
     }
     
     AudioStreamBasicDescription fileAudioFormat = {0};
+    UInt32 formatSize = sizeof(fileAudioFormat);
     
     result =    ExtAudioFileGetProperty (
                                          audioFileObject,
                                          kExtAudioFileProperty_FileDataFormat,
-                                         sizeof (fileAudioFormat),
+                                         &formatSize,
                                          &fileAudioFormat
                                          );
     
     channelCount = fileAudioFormat.mChannelsPerFrame;
+    self.stereo = channelCount == 2;
     
     AudioStreamBasicDescription importFormat = {0};
     importFormat.mFormatID          = kAudioFormatLinearPCM;
@@ -71,7 +83,7 @@
     result =    ExtAudioFileSetProperty (
                                          audioFileObject,
                                          kExtAudioFileProperty_ClientDataFormat,
-                                         sizeof (importFormat),
+                                         &formatSize,
                                          &importFormat
                                          );
     
@@ -121,8 +133,29 @@
         return;
     }
     
-    sampleCount = 0;
+    sampleCountLeft = 0;
+    sampleCountRight = 0;
     ExtAudioFileDispose (audioFileObject);
+}
+
+- (Float32)playLeft
+{
+    Float32 sample = leftData[sampleCountLeft];
+    sampleCountLeft++;
+    if (sampleCountLeft == totalFrames){
+        sampleCountLeft = 0;
+    }
+    return sample;
+}
+
+- (Float32)playRight
+{
+    Float32 sample = rightData[sampleCountRight];
+    sampleCountRight++;
+    if (sampleCountRight == totalFrames){
+        sampleCountRight = 0;
+    }
+    return sample;
 }
 
 @end

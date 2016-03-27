@@ -10,6 +10,8 @@
 
 @interface AudioFile : NSObject
 
+@property (nonatomic, getter=isStereo) BOOL stereo;
+
 - (void)loadFile:(NSString *)filename;
 - (Float32)playLeft;
 - (Float32)playRight;
