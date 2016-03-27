@@ -13,7 +13,7 @@ ParticleGroup::ParticleGroup(ofVec3f startPos, ofVec3f endPos, float rndNumber) 
     
     float mod = 5;
     float start = -5;
-    float end = 4;
+    float end = 2;
     float maxValue = MathUtility::Gaussian(0, 0, mod);
     float minValue = MathUtility::Gaussian(-5, 0, mod);
     
@@ -67,8 +67,8 @@ void ParticleGroup::updateAmplitude(float bass, float mid, float treble) {
 
 void ParticleGroup::updateNoise(float freqPower){
     timeOffset += ofMap(freqPower, 0, MAX_DECIBEL_INPUT, MIN_NOISE_TIMESTEP, MAX_NOISE_TIMESTEP);
-    amplitudeModifierBass += freqPower*0.2;
-    amplitudeModifierBass *= 0.95;
+    amplitudeModifierBass += freqPower*0.1;
+    amplitudeModifierBass *= 0.965;
     amplitudeModifierBass = ofClamp(amplitudeModifierBass, MIN_MOVEMENT, MAX_MOVEMENT);
 }
 

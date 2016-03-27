@@ -53,7 +53,7 @@ void ofApp::setup(){
     colorMode = ColorModeBlue;
     
     aFile = [AudioFile new];
-    [aFile loadFile:@"liszt.mp3"];
+    [aFile loadFile:@"chopin.mp3"];
 }
 
 void ofApp::changeColor() {
@@ -102,7 +102,7 @@ void ofApp::update(){
         //updateVelocity();
         
         //float freqMod = ofMap(touchEvent.x, 0, ofGetWidth(), MIN_FREQUENCY, MAX_FREQUENCY);
-        float amplitudeBass = (frequencies[0]+frequencies[1]+frequencies[2]+frequencies[3]) / 4;
+        float amplitudeBass = (frequencies[0]+frequencies[1]+frequencies[2]+frequencies[3]) / 16;
     float amplitudeMid = (frequencies[4]+frequencies[5]+frequencies[6]+frequencies[7]+frequencies[8]+frequencies[9]+frequencies[10]+frequencies[11]) / 8;
     float amplitudeTreble = (frequencies[12]+frequencies[13]+frequencies[14]+frequencies[15]+frequencies[16]+frequencies[17]) / 6;
     
@@ -118,7 +118,7 @@ void ofApp::update(){
             g.color = ofVec3f(red, green, blue);
             //g.color = ofVec3f(0.4, 0.4, 1);
             g.updateAmplitude(amplitudeBass,amplitudeMid,amplitudeTreble);
-            g.updateNoise(freq);
+            g.updateNoise(freq+amplitudeBass);
             g.updatePositions(ofGetElapsedTimef());
         }
 
