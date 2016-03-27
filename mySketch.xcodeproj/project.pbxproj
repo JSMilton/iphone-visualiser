@@ -21,6 +21,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		4F1859041CA86E2B00271129 /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F1859021CA86E2B00271129 /* Parameter.cpp */; };
 		4F28D8731C4A8DDC00D666C5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F28D8721C4A8DDC00D666C5 /* particle.png */; };
 		4F28D8761C4A951400D666C5 /* ParticleGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D8741C4A951400D666C5 /* ParticleGroup.cpp */; };
 		4F8D6B171C62AE300009F7D3 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D6B151C62AE300009F7D3 /* Particle.cpp */; };
@@ -93,6 +94,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* ofxiOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOS_Prefix.pch; sourceTree = "<group>"; };
+		4F1859021CA86E2B00271129 /* Parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parameter.cpp; sourceTree = "<group>"; };
+		4F1859031CA86E2B00271129 /* Parameter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parameter.hpp; sourceTree = "<group>"; };
 		4F28D8721C4A8DDC00D666C5 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
 		4F28D8741C4A951400D666C5 /* ParticleGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleGroup.cpp; sourceTree = "<group>"; };
 		4F28D8751C4A951400D666C5 /* ParticleGroup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParticleGroup.hpp; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 				4F9C7A621C556090004FEDA8 /* MathUtility.hpp */,
 				1AA8CF541CA7FBB60033E799 /* AudioFile.h */,
 				1AA8CF551CA7FBB60033E799 /* AudioFile.m */,
+				4F1859021CA86E2B00271129 /* Parameter.cpp */,
+				4F1859031CA86E2B00271129 /* Parameter.hpp */,
 				1AA8CF821CA826D70033E799 /* ofxMaxim */,
 				4FF2AD9E1C42F99600862343 /* Launch Screen.storyboard */,
 			);
@@ -426,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
+				4F1859041CA86E2B00271129 /* Parameter.cpp in Sources */,
 				4F8D6B171C62AE300009F7D3 /* Particle.cpp in Sources */,
 				1AA8CF7A1CA826D20033E799 /* stb_vorbis.c in Sources */,
 				1AA8CF7D1CA826D20033E799 /* maxiGrains.cpp in Sources */,
@@ -462,7 +468,7 @@
 				GCC_PREFIX_HEADER = ofxiOS_Prefix.pch;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				INFOPLIST_FILE = "ofxiOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -477,7 +483,7 @@
 				GCC_PREFIX_HEADER = ofxiOS_Prefix.pch;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				INFOPLIST_FILE = "ofxiOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
