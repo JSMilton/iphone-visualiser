@@ -19,6 +19,19 @@
     UInt64 sampleCountRight;
 }
 
+- (instancetype)init
+{
+    if (self = [super init]){
+        leftData = 0;
+        rightData = 0;
+        channelCount = 0;
+        totalFrames = 0;
+        sampleCountLeft = 0;
+        sampleCountRight = 0;
+    }
+    return self;
+}
+
 - (void)loadFile:(NSString *)filename
 {
     NSURL *url = [[NSBundle mainBundle] URLForResource:filename withExtension:nil];
