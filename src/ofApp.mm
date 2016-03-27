@@ -154,26 +154,17 @@ void ofApp::exit(){
 
 //--------------------------------------------------------------
 void ofApp::touchDown(ofTouchEventArgs & touch){
-    //force = AMPLITUDE_VELOCITY;
-    //touchEvent = touch;
-    //touchInterval = ofGetElapsedTimeMillis();
+
 }
 
 //--------------------------------------------------------------
 void ofApp::touchMoved(ofTouchEventArgs & touch){
-    //touchEvent = touch;
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::touchUp(ofTouchEventArgs & touch){
-    //force = -AMPLITUDE_VELOCITY/3;
-    //touchEvent = touch;
-    
-//    if (ofGetElapsedTimeMillis() - touchInterval < 200){
-//        playing = !playing;
-//    }
-//    
-//    touchInterval = 0;
+
 }
 
 //--------------------------------------------------------------

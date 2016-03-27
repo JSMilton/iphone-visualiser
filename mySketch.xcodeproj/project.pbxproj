@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AA8CF531CA7F0510033E799 /* chopin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8CF521CA7F0510033E799 /* chopin.wav */; };
 		1AA8CF561CA7FBB60033E799 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF551CA7FBB60033E799 /* AudioFile.m */; };
-		1AA8CF5A1CA80E980033E799 /* liszt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8CF591CA80E980033E799 /* liszt.mp3 */; };
-		1AA8CF5D1CA81EFA0033E799 /* rodoFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF5C1CA81EFA0033E799 /* rodoFFT.m */; };
 		1AA8CF7A1CA826D20033E799 /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6A1CA826D20033E799 /* stb_vorbis.c */; };
 		1AA8CF7B1CA826D20033E799 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6D1CA826D20033E799 /* maximilian.cpp */; };
 		1AA8CF7C1CA826D20033E799 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6F1CA826D20033E799 /* maxiMFCC.cpp */; };
@@ -19,6 +16,8 @@
 		1AA8CF7F1CA826D20033E799 /* maxiBark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF751CA826D20033E799 /* maxiBark.cpp */; };
 		1AA8CF801CA826D20033E799 /* maxiAtoms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF771CA826D20033E799 /* maxiAtoms.cpp */; };
 		1AA8CF811CA826D20033E799 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF791CA826D20033E799 /* fft.cpp */; };
+		1AC425881CA869ED00B42265 /* chopin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AC425861CA869ED00B42265 /* chopin.mp3 */; };
+		1AC425891CA869ED00B42265 /* liszt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AC425871CA869ED00B42265 /* liszt.mp3 */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -67,12 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1AA8CF521CA7F0510033E799 /* chopin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chopin.wav; sourceTree = "<group>"; };
 		1AA8CF541CA7FBB60033E799 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
 		1AA8CF551CA7FBB60033E799 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
-		1AA8CF591CA80E980033E799 /* liszt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = liszt.mp3; sourceTree = "<group>"; };
-		1AA8CF5B1CA81EFA0033E799 /* rodoFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rodoFFT.h; sourceTree = "<group>"; };
-		1AA8CF5C1CA81EFA0033E799 /* rodoFFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rodoFFT.m; sourceTree = "<group>"; };
 		1AA8CF681CA826C20033E799 /* ofxMaxim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
 		1AA8CF691CA826D20033E799 /* stb_vorbis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_vorbis.h; sourceTree = "<group>"; };
 		1AA8CF6A1CA826D20033E799 /* stb_vorbis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_vorbis.c; sourceTree = "<group>"; };
@@ -91,6 +86,8 @@
 		1AA8CF771CA826D20033E799 /* maxiAtoms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiAtoms.cpp; sourceTree = "<group>"; };
 		1AA8CF781CA826D20033E799 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
 		1AA8CF791CA826D20033E799 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
+		1AC425861CA869ED00B42265 /* chopin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chopin.mp3; sourceTree = "<group>"; };
+		1AC425871CA869ED00B42265 /* liszt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = liszt.mp3; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* mySketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -231,8 +228,8 @@
 				4FF2AD9A1C42ED4700862343 /* shader.frag */,
 				4F28D8721C4A8DDC00D666C5 /* particle.png */,
 				4FDC97A31C4C312000E512EB /* particle2.png */,
-				1AA8CF521CA7F0510033E799 /* chopin.wav */,
-				1AA8CF591CA80E980033E799 /* liszt.mp3 */,
+				1AC425861CA869ED00B42265 /* chopin.mp3 */,
+				1AC425871CA869ED00B42265 /* liszt.mp3 */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -315,8 +312,6 @@
 				4F9C7A621C556090004FEDA8 /* MathUtility.hpp */,
 				1AA8CF541CA7FBB60033E799 /* AudioFile.h */,
 				1AA8CF551CA7FBB60033E799 /* AudioFile.m */,
-				1AA8CF5B1CA81EFA0033E799 /* rodoFFT.h */,
-				1AA8CF5C1CA81EFA0033E799 /* rodoFFT.m */,
 				1AA8CF821CA826D70033E799 /* ofxMaxim */,
 				4FF2AD9E1C42F99600862343 /* Launch Screen.storyboard */,
 			);
@@ -402,8 +397,8 @@
 				4FF2AD9F1C42F99600862343 /* Launch Screen.storyboard in Resources */,
 				4FF2AD971C42ECFE00862343 /* Icon@2x.png in Resources */,
 				4FF2AD941C42ECFE00862343 /* Icon-72.png in Resources */,
-				1AA8CF5A1CA80E980033E799 /* liszt.mp3 in Resources */,
-				1AA8CF531CA7F0510033E799 /* chopin.wav in Resources */,
+				1AC425891CA869ED00B42265 /* liszt.mp3 in Resources */,
+				1AC425881CA869ED00B42265 /* chopin.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +428,6 @@
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				4F8D6B171C62AE300009F7D3 /* Particle.cpp in Sources */,
 				1AA8CF7A1CA826D20033E799 /* stb_vorbis.c in Sources */,
-				1AA8CF5D1CA81EFA0033E799 /* rodoFFT.m in Sources */,
 				1AA8CF7D1CA826D20033E799 /* maxiGrains.cpp in Sources */,
 				4F28D8761C4A951400D666C5 /* ParticleGroup.cpp in Sources */,
 				1AA8CF7B1CA826D20033E799 /* maximilian.cpp in Sources */,
