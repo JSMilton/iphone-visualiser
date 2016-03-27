@@ -10,19 +10,20 @@
 		1AA8CF531CA7F0510033E799 /* chopin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8CF521CA7F0510033E799 /* chopin.wav */; };
 		1AA8CF561CA7FBB60033E799 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF551CA7FBB60033E799 /* AudioFile.m */; };
 		1AA8CF5A1CA80E980033E799 /* liszt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8CF591CA80E980033E799 /* liszt.mp3 */; };
+		1AA8CF5D1CA81EFA0033E799 /* rodoFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF5C1CA81EFA0033E799 /* rodoFFT.m */; };
+		1AA8CF7A1CA826D20033E799 /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6A1CA826D20033E799 /* stb_vorbis.c */; };
+		1AA8CF7B1CA826D20033E799 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6D1CA826D20033E799 /* maximilian.cpp */; };
+		1AA8CF7C1CA826D20033E799 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6F1CA826D20033E799 /* maxiMFCC.cpp */; };
+		1AA8CF7D1CA826D20033E799 /* maxiGrains.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF711CA826D20033E799 /* maxiGrains.cpp */; };
+		1AA8CF7E1CA826D20033E799 /* maxiFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF731CA826D20033E799 /* maxiFFT.cpp */; };
+		1AA8CF7F1CA826D20033E799 /* maxiBark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF751CA826D20033E799 /* maxiBark.cpp */; };
+		1AA8CF801CA826D20033E799 /* maxiAtoms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF771CA826D20033E799 /* maxiAtoms.cpp */; };
+		1AA8CF811CA826D20033E799 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF791CA826D20033E799 /* fft.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		4F28D8731C4A8DDC00D666C5 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F28D8721C4A8DDC00D666C5 /* particle.png */; };
 		4F28D8761C4A951400D666C5 /* ParticleGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D8741C4A951400D666C5 /* ParticleGroup.cpp */; };
-		4F8662841C7A08D200D20975 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F8662731C7A08D200D20975 /* fft.cpp */; };
-		4F8662851C7A08D200D20975 /* maxiAtoms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F8662751C7A08D200D20975 /* maxiAtoms.cpp */; };
-		4F8662861C7A08D200D20975 /* maxiBark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F8662771C7A08D200D20975 /* maxiBark.cpp */; };
-		4F8662871C7A08D200D20975 /* maxiFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F8662791C7A08D200D20975 /* maxiFFT.cpp */; };
-		4F8662881C7A08D200D20975 /* maxiGrains.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F86627B1C7A08D200D20975 /* maxiGrains.cpp */; };
-		4F8662891C7A08D200D20975 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F86627D1C7A08D200D20975 /* maxiMFCC.cpp */; };
-		4F86628A1C7A08D200D20975 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F86627F1C7A08D200D20975 /* maximilian.cpp */; };
-		4F86628B1C7A08D200D20975 /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F8662821C7A08D200D20975 /* stb_vorbis.c */; };
 		4F8D6B171C62AE300009F7D3 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F8D6B151C62AE300009F7D3 /* Particle.cpp */; };
 		4F9C7A631C556090004FEDA8 /* MathUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C7A611C556090004FEDA8 /* MathUtility.cpp */; };
 		4FDC97A41C4C312000E512EB /* particle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC97A31C4C312000E512EB /* particle2.png */; };
@@ -70,6 +71,26 @@
 		1AA8CF541CA7FBB60033E799 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
 		1AA8CF551CA7FBB60033E799 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
 		1AA8CF591CA80E980033E799 /* liszt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = liszt.mp3; sourceTree = "<group>"; };
+		1AA8CF5B1CA81EFA0033E799 /* rodoFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rodoFFT.h; sourceTree = "<group>"; };
+		1AA8CF5C1CA81EFA0033E799 /* rodoFFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rodoFFT.m; sourceTree = "<group>"; };
+		1AA8CF681CA826C20033E799 /* ofxMaxim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
+		1AA8CF691CA826D20033E799 /* stb_vorbis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_vorbis.h; sourceTree = "<group>"; };
+		1AA8CF6A1CA826D20033E799 /* stb_vorbis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_vorbis.c; sourceTree = "<group>"; };
+		1AA8CF6B1CA826D20033E799 /* sineTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sineTable.h; sourceTree = "<group>"; };
+		1AA8CF6C1CA826D20033E799 /* maximilian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maximilian.h; sourceTree = "<group>"; };
+		1AA8CF6D1CA826D20033E799 /* maximilian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maximilian.cpp; sourceTree = "<group>"; };
+		1AA8CF6E1CA826D20033E799 /* maxiMFCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiMFCC.h; sourceTree = "<group>"; };
+		1AA8CF6F1CA826D20033E799 /* maxiMFCC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiMFCC.cpp; sourceTree = "<group>"; };
+		1AA8CF701CA826D20033E799 /* maxiGrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiGrains.h; sourceTree = "<group>"; };
+		1AA8CF711CA826D20033E799 /* maxiGrains.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiGrains.cpp; sourceTree = "<group>"; };
+		1AA8CF721CA826D20033E799 /* maxiFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiFFT.h; sourceTree = "<group>"; };
+		1AA8CF731CA826D20033E799 /* maxiFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiFFT.cpp; sourceTree = "<group>"; };
+		1AA8CF741CA826D20033E799 /* maxiBark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiBark.h; sourceTree = "<group>"; };
+		1AA8CF751CA826D20033E799 /* maxiBark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiBark.cpp; sourceTree = "<group>"; };
+		1AA8CF761CA826D20033E799 /* maxiAtoms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxiAtoms.h; sourceTree = "<group>"; };
+		1AA8CF771CA826D20033E799 /* maxiAtoms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maxiAtoms.cpp; sourceTree = "<group>"; };
+		1AA8CF781CA826D20033E799 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
+		1AA8CF791CA826D20033E799 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* mySketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mySketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -79,24 +100,6 @@
 		4F28D8741C4A951400D666C5 /* ParticleGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleGroup.cpp; sourceTree = "<group>"; };
 		4F28D8751C4A951400D666C5 /* ParticleGroup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParticleGroup.hpp; sourceTree = "<group>"; };
 		4F28D8771C4A959700D666C5 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		4F8662711C7A08D200D20975 /* ofxMaxim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
-		4F8662731C7A08D200D20975 /* fft.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
-		4F8662741C7A08D200D20975 /* fft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
-		4F8662751C7A08D200D20975 /* maxiAtoms.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maxiAtoms.cpp; sourceTree = "<group>"; };
-		4F8662761C7A08D200D20975 /* maxiAtoms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maxiAtoms.h; sourceTree = "<group>"; };
-		4F8662771C7A08D200D20975 /* maxiBark.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maxiBark.cpp; sourceTree = "<group>"; };
-		4F8662781C7A08D200D20975 /* maxiBark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maxiBark.h; sourceTree = "<group>"; };
-		4F8662791C7A08D200D20975 /* maxiFFT.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maxiFFT.cpp; sourceTree = "<group>"; };
-		4F86627A1C7A08D200D20975 /* maxiFFT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maxiFFT.h; sourceTree = "<group>"; };
-		4F86627B1C7A08D200D20975 /* maxiGrains.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maxiGrains.cpp; sourceTree = "<group>"; };
-		4F86627C1C7A08D200D20975 /* maxiGrains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maxiGrains.h; sourceTree = "<group>"; };
-		4F86627D1C7A08D200D20975 /* maxiMFCC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maxiMFCC.cpp; sourceTree = "<group>"; };
-		4F86627E1C7A08D200D20975 /* maxiMFCC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maxiMFCC.h; sourceTree = "<group>"; };
-		4F86627F1C7A08D200D20975 /* maximilian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maximilian.cpp; sourceTree = "<group>"; };
-		4F8662801C7A08D200D20975 /* maximilian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maximilian.h; sourceTree = "<group>"; };
-		4F8662811C7A08D200D20975 /* sineTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sineTable.h; sourceTree = "<group>"; };
-		4F8662821C7A08D200D20975 /* stb_vorbis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stb_vorbis.c; sourceTree = "<group>"; };
-		4F8662831C7A08D200D20975 /* stb_vorbis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_vorbis.h; sourceTree = "<group>"; };
 		4F8D6B151C62AE300009F7D3 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		4F8D6B161C62AE300009F7D3 /* Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
 		4F9C7A611C556090004FEDA8 /* MathUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MathUtility.cpp; sourceTree = "<group>"; };
@@ -162,6 +165,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1AA8CF821CA826D70033E799 /* ofxMaxim */ = {
+			isa = PBXGroup;
+			children = (
+				1AA8CF681CA826C20033E799 /* ofxMaxim.h */,
+				1AA8CF691CA826D20033E799 /* stb_vorbis.h */,
+				1AA8CF6A1CA826D20033E799 /* stb_vorbis.c */,
+				1AA8CF6B1CA826D20033E799 /* sineTable.h */,
+				1AA8CF6C1CA826D20033E799 /* maximilian.h */,
+				1AA8CF6D1CA826D20033E799 /* maximilian.cpp */,
+				1AA8CF6E1CA826D20033E799 /* maxiMFCC.h */,
+				1AA8CF6F1CA826D20033E799 /* maxiMFCC.cpp */,
+				1AA8CF701CA826D20033E799 /* maxiGrains.h */,
+				1AA8CF711CA826D20033E799 /* maxiGrains.cpp */,
+				1AA8CF721CA826D20033E799 /* maxiFFT.h */,
+				1AA8CF731CA826D20033E799 /* maxiFFT.cpp */,
+				1AA8CF741CA826D20033E799 /* maxiBark.h */,
+				1AA8CF751CA826D20033E799 /* maxiBark.cpp */,
+				1AA8CF761CA826D20033E799 /* maxiAtoms.h */,
+				1AA8CF771CA826D20033E799 /* maxiAtoms.cpp */,
+				1AA8CF781CA826D20033E799 /* fft.h */,
+				1AA8CF791CA826D20033E799 /* fft.cpp */,
+			);
+			name = ofxMaxim;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,49 +221,6 @@
 				67DFA53419F92A5E003B3434 /* Accelerate.framework */,
 			);
 			name = "core frameworks";
-			sourceTree = "<group>";
-		};
-		4F86626F1C7A08D200D20975 /* ofxMaxim */ = {
-			isa = PBXGroup;
-			children = (
-				4F8662701C7A08D200D20975 /* src */,
-				4F8662721C7A08D200D20975 /* libs */,
-			);
-			name = ofxMaxim;
-			sourceTree = "<group>";
-		};
-		4F8662701C7A08D200D20975 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				4F8662711C7A08D200D20975 /* ofxMaxim.h */,
-			);
-			name = src;
-			path = ../../../addons/ofxMaxim/src;
-			sourceTree = "<group>";
-		};
-		4F8662721C7A08D200D20975 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				4F8662731C7A08D200D20975 /* fft.cpp */,
-				4F8662741C7A08D200D20975 /* fft.h */,
-				4F8662751C7A08D200D20975 /* maxiAtoms.cpp */,
-				4F8662761C7A08D200D20975 /* maxiAtoms.h */,
-				4F8662771C7A08D200D20975 /* maxiBark.cpp */,
-				4F8662781C7A08D200D20975 /* maxiBark.h */,
-				4F8662791C7A08D200D20975 /* maxiFFT.cpp */,
-				4F86627A1C7A08D200D20975 /* maxiFFT.h */,
-				4F86627B1C7A08D200D20975 /* maxiGrains.cpp */,
-				4F86627C1C7A08D200D20975 /* maxiGrains.h */,
-				4F86627D1C7A08D200D20975 /* maxiMFCC.cpp */,
-				4F86627E1C7A08D200D20975 /* maxiMFCC.h */,
-				4F86627F1C7A08D200D20975 /* maximilian.cpp */,
-				4F8662801C7A08D200D20975 /* maximilian.h */,
-				4F8662811C7A08D200D20975 /* sineTable.h */,
-				4F8662821C7A08D200D20975 /* stb_vorbis.c */,
-				4F8662831C7A08D200D20975 /* stb_vorbis.h */,
-			);
-			name = libs;
-			path = ../../../addons/ofxMaxim/libs;
 			sourceTree = "<group>";
 		};
 		4FF2AD811C42ECFE00862343 /* data */ = {
@@ -281,7 +266,6 @@
 		BB16F26B0F2B646B00518274 /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				4F86626F1C7A08D200D20975 /* ofxMaxim */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -331,6 +315,9 @@
 				4F9C7A621C556090004FEDA8 /* MathUtility.hpp */,
 				1AA8CF541CA7FBB60033E799 /* AudioFile.h */,
 				1AA8CF551CA7FBB60033E799 /* AudioFile.m */,
+				1AA8CF5B1CA81EFA0033E799 /* rodoFFT.h */,
+				1AA8CF5C1CA81EFA0033E799 /* rodoFFT.m */,
+				1AA8CF821CA826D70033E799 /* ofxMaxim */,
 				4FF2AD9E1C42F99600862343 /* Launch Screen.storyboard */,
 			);
 			path = src;
@@ -443,20 +430,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F8662891C7A08D200D20975 /* maxiMFCC.cpp in Sources */,
-				4F8662881C7A08D200D20975 /* maxiGrains.cpp in Sources */,
-				4F8662841C7A08D200D20975 /* fft.cpp in Sources */,
-				4F8662871C7A08D200D20975 /* maxiFFT.cpp in Sources */,
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				4F8D6B171C62AE300009F7D3 /* Particle.cpp in Sources */,
+				1AA8CF7A1CA826D20033E799 /* stb_vorbis.c in Sources */,
+				1AA8CF5D1CA81EFA0033E799 /* rodoFFT.m in Sources */,
+				1AA8CF7D1CA826D20033E799 /* maxiGrains.cpp in Sources */,
 				4F28D8761C4A951400D666C5 /* ParticleGroup.cpp in Sources */,
-				4F8662861C7A08D200D20975 /* maxiBark.cpp in Sources */,
-				4F86628A1C7A08D200D20975 /* maximilian.cpp in Sources */,
+				1AA8CF7B1CA826D20033E799 /* maximilian.cpp in Sources */,
+				1AA8CF7E1CA826D20033E799 /* maxiFFT.cpp in Sources */,
 				4F9C7A631C556090004FEDA8 /* MathUtility.cpp in Sources */,
 				1AA8CF561CA7FBB60033E799 /* AudioFile.m in Sources */,
-				4F86628B1C7A08D200D20975 /* stb_vorbis.c in Sources */,
+				1AA8CF7F1CA826D20033E799 /* maxiBark.cpp in Sources */,
 				E4D8936F11527B74007E1F53 /* ofApp.mm in Sources */,
-				4F8662851C7A08D200D20975 /* maxiAtoms.cpp in Sources */,
+				1AA8CF811CA826D20033E799 /* fft.cpp in Sources */,
+				1AA8CF7C1CA826D20033E799 /* maxiMFCC.cpp in Sources */,
+				1AA8CF801CA826D20033E799 /* maxiAtoms.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +468,7 @@
 				GCC_PREFIX_HEADER = ofxiOS_Prefix.pch;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				INFOPLIST_FILE = "ofxiOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -495,7 +483,7 @@
 				GCC_PREFIX_HEADER = ofxiOS_Prefix.pch;
 				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = NO;
 				INFOPLIST_FILE = "ofxiOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
