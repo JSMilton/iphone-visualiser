@@ -40,7 +40,6 @@ public:
 
     void audioOut(ofSoundBuffer &buffer);
 
-    void updateVelocity();
     void populateFrequencies();
     void changeColor();
     
@@ -48,12 +47,7 @@ public:
     ofShader shader;
     vector<ParticleGroup> groups;
 
-    ofTouchEventArgs touchEvent;
-
     ofEasyCam camera;
-
-    float velocity;
-    float force;
 
     maxiFFT fft;
     
@@ -63,15 +57,11 @@ public:
     
     bool playing;
     
-    uint64_t touchInterval;
-    
     ofVec3f colorMax;
     ofVec3f colorMin;
     float colorScaling = 0.0;
     float colorTimestamp = 0.0;
     int colorMode = ColorModeRed;
-    
-    ofRectangle containingRect;
     
     AudioFile *aFile;
     

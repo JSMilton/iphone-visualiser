@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A63C8F31CA88E0500195201 /* mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A63C8F21CA88E0500195201 /* mode.mp3 */; };
 		1AA8CF561CA7FBB60033E799 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF551CA7FBB60033E799 /* AudioFile.m */; };
 		1AA8CF7A1CA826D20033E799 /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6A1CA826D20033E799 /* stb_vorbis.c */; };
 		1AA8CF7B1CA826D20033E799 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6D1CA826D20033E799 /* maximilian.cpp */; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A63C8F21CA88E0500195201 /* mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mode.mp3; sourceTree = "<group>"; };
 		1AA8CF541CA7FBB60033E799 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
 		1AA8CF551CA7FBB60033E799 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
 		1AA8CF681CA826C20033E799 /* ofxMaxim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				4FDC97A31C4C312000E512EB /* particle2.png */,
 				1AC425861CA869ED00B42265 /* chopin.mp3 */,
 				1AC425871CA869ED00B42265 /* liszt.mp3 */,
+				1A63C8F21CA88E0500195201 /* mode.mp3 */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				4FDC97A41C4C312000E512EB /* particle2.png in Resources */,
 				4F28D8731C4A8DDC00D666C5 /* particle.png in Resources */,
 				4FF2AD9F1C42F99600862343 /* Launch Screen.storyboard in Resources */,
+				1A63C8F31CA88E0500195201 /* mode.mp3 in Resources */,
 				4FF2AD971C42ECFE00862343 /* Icon@2x.png in Resources */,
 				4FF2AD941C42ECFE00862343 /* Icon-72.png in Resources */,
 				1AC425891CA869ED00B42265 /* liszt.mp3 in Resources */,

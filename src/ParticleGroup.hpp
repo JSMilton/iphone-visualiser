@@ -13,6 +13,7 @@
 #include "ofMain.h"
 #include "Constants.h"
 #include "Particle.hpp"
+#include "Parameter.hpp"
 
 class ParticleGroup {
 public:
@@ -21,13 +22,15 @@ public:
     
     void draw();
     void updatePositions(float elapsedTime);
-    void updateAmplitude(float bass, float mid, float treble);
-    void updateNoise(float freqPower);
+    void updateParameters(float value);
     
     vector<Particle>particles;
     
     ofVec3f color;
-    float particleSize = MIN_PARTICLE_SIZE;
+    
+    Parameter amplitude;
+    Parameter noise;
+    float particleSize;
     
 private:
     float startZ = 200.0;
@@ -40,6 +43,8 @@ private:
     float amplitudeModifierMid = MIN_MOVEMENT;
     float amplitudeModifierTreble = MIN_MOVEMENT;
     float timeOffset;
+    float velocity;
+    float target;
     
     ofVboMesh vboMesh;
     vector<float>scalingConstants;

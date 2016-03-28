@@ -17,6 +17,7 @@
     UInt64 totalFrames;
     UInt64 sampleCountLeft;
     UInt64 sampleCountRight;
+    BOOL loaded;
 }
 
 - (instancetype)init
@@ -28,6 +29,7 @@
         totalFrames = 0;
         sampleCountLeft = 0;
         sampleCountRight = 0;
+        loaded = NO;
     }
     return self;
 }
@@ -149,10 +151,15 @@
     sampleCountLeft = 0;
     sampleCountRight = 0;
     ExtAudioFileDispose (audioFileObject);
+    loaded = YES;
 }
 
 - (Float32)playLeft
 {
+    if (!loaded){
+        return 0;
+    }
+    
     Float32 sample = leftData[sampleCountLeft];
     sampleCountLeft++;
     if (sampleCountLeft == totalFrames){
@@ -163,6 +170,10 @@
 
 - (Float32)playRight
 {
+    if (!loaded){
+        return 0;
+    }
+    
     Float32 sample = rightData[sampleCountRight];
     sampleCountRight++;
     if (sampleCountRight == totalFrames){

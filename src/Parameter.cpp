@@ -8,12 +8,13 @@
 
 #include "Parameter.hpp"
 
-Parameter::Parameter(float accel, float maxVal, float minVal){
-    acceleration = accel;
+Parameter::Parameter(float smoothing, float minVal, float maxVal){
+    smoothingValue = smoothing;
+    minValue = minVal;
     maxValue = maxVal;
-    minVale = minVal;
 }
 
 void Parameter::update(float nextValue){
-    
+    value += (nextValue-value)*smoothingValue;
+    value = ofClamp(value, minValue, maxValue);
 }

@@ -10,21 +10,21 @@
 #define Parameter_hpp
 
 #include <stdio.h>
+#include "ofMath.h"
 
 class Parameter {
 public:
     Parameter(){};
-    Parameter(float accel, float maxVal, float minVal);
+    Parameter(float smoothing, float minVal, float maxVal);
     
     void update(float nextValue);
     
     float value;
     
 private:
-    float velocity;
-    float acceleration;
+    float smoothingValue;
     float maxValue;
-    float minVale;
+    float minValue;
 };
 
 #endif /* Parameter_hpp */

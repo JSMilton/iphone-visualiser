@@ -13,13 +13,10 @@ void ofApp::setup(){
         float offset = ofMap(i, 0, NUM_GROUPS, 0, TWO_PI);
         ofVec3f startPos = ofVec3f(halfSize*cos(offset), halfSize*sin(offset), 0);
         ofVec3f endPos = ofVec3f(startPos.x,startPos.y,distance);
-        groups.emplace_back(startPos, endPos, rand() % 10);
+        groups.emplace_back(startPos, endPos, rand() % 3);
     }
     
     shader.load("shader");
-    
-    force = 0.0;
-    velocity = MIN_MOVEMENT;
     
     camera.setDrag(0);
     camera.setDistance(distance/1.5);
@@ -44,7 +41,6 @@ void ofApp::setup(){
     }
     
     playing = false;
-    touchInterval = 0;
     
     colorMax = ofVec3f(MAX_COLOR, MID_COLOR, MID_COLOR);
     colorMin = ofVec3f(MAX_COLOR, MIN_COLOR, MIN_COLOR);
@@ -100,28 +96,16 @@ void ofApp::update(){
     
     //if (playing){
         //updateVelocity();
-        
-        //float freqMod = ofMap(touchEvent.x, 0, ofGetWidth(), MIN_FREQUENCY, MAX_FREQUENCY);
-        float amplitudeBass = (frequencies[0]+frequencies[1]+frequencies[2]+frequencies[3]) / 16;
-    float amplitudeMid = (frequencies[4]+frequencies[5]+frequencies[6]+frequencies[7]+frequencies[8]+frequencies[9]+frequencies[10]+frequencies[11]) / 8;
-    float amplitudeTreble = (frequencies[12]+frequencies[13]+frequencies[14]+frequencies[15]+frequencies[16]+frequencies[17]) / 6;
-    
-        
         for (size_t i = 0; i < groups.size(); i++){
             ParticleGroup &g = groups[i];
             float freq = frequencies[i%numFrequencyBands];
-            g.particleSize = ofMap(freq, 0, MAX_DECIBEL_INPUT, MIN_PARTICLE_SIZE, MAX_PARTICLE_SIZE);
-            
             float red = ofMap(freq, 0, MAX_DECIBEL_INPUT, colorMin.x, colorMax.x);
             float green = ofMap(freq, 0, MAX_DECIBEL_INPUT, colorMin.y, colorMax.y);
             float blue = ofMap(freq, 0, MAX_DECIBEL_INPUT, colorMin.z, colorMax.z);
             g.color = ofVec3f(red, green, blue);
-            //g.color = ofVec3f(0.4, 0.4, 1);
-            g.updateAmplitude(amplitudeBass,amplitudeMid,amplitudeTreble);
-            g.updateNoise(freq+amplitudeBass);
+            g.updateParameters(freq);
             g.updatePositions(ofGetElapsedTimef());
         }
-
     //}
 }
 
@@ -139,12 +123,6 @@ void ofApp::draw(){
     particleImage.unbind();
     shader.end();
     camera.end();
-}
-
-void ofApp::updateVelocity() {
-    velocity += force;
-    velocity = MIN(MAX_MOVEMENT, velocity);
-    velocity = MAX(MIN_MOVEMENT, velocity);
 }
 
 //--------------------------------------------------------------
