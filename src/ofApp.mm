@@ -50,6 +50,14 @@ void ofApp::setup(){
     
     aFile = [AudioFile new];
     [aFile loadFile:@"chopin.mp3"];
+    
+    // change default sizes for ofxGui so it's usable in small/high density screens
+    ofxGuiSetFont("Questrial-Regular.ttf",10,true,true);
+    ofxGuiSetTextPadding(4);
+    ofxGuiSetDefaultWidth(300);
+    ofxGuiSetDefaultHeight(18);
+    
+    gui.setup();
 }
 
 void ofApp::changeColor() {

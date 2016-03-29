@@ -4,6 +4,7 @@
 #include "Constants.h"
 #include "ParticleGroup.hpp"
 #include "ofxMaxim.h"
+#include "ofxGui.h"
 #import "AudioFile.h"
 
 static const size_t numFrequencyBands = 18;
@@ -64,6 +65,10 @@ public:
     int colorMode = ColorModeRed;
     
     AudioFile *aFile;
+    
+    ofxPanel gui;
+    ofxFloatSlider slider;
+    
     
 };
 

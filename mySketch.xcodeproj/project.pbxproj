@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1A63C8F31CA88E0500195201 /* mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A63C8F21CA88E0500195201 /* mode.mp3 */; };
+		1A99C9171CA98B3B004A218C /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C9061CA98B3B004A218C /* ofxBaseGui.cpp */; };
+		1A99C9181CA98B3B004A218C /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C9081CA98B3B004A218C /* ofxButton.cpp */; };
+		1A99C9191CA98B3B004A218C /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C90B1CA98B3B004A218C /* ofxGuiGroup.cpp */; };
+		1A99C91A1CA98B3B004A218C /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C90D1CA98B3B004A218C /* ofxLabel.cpp */; };
+		1A99C91B1CA98B3B004A218C /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C90F1CA98B3B004A218C /* ofxPanel.cpp */; };
+		1A99C91C1CA98B3B004A218C /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C9111CA98B3B004A218C /* ofxSlider.cpp */; };
+		1A99C91D1CA98B3B004A218C /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C9131CA98B3B004A218C /* ofxSliderGroup.cpp */; };
+		1A99C91E1CA98B3B004A218C /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A99C9151CA98B3B004A218C /* ofxToggle.cpp */; };
 		1AA8CF561CA7FBB60033E799 /* AudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF551CA7FBB60033E799 /* AudioFile.m */; };
 		1AA8CF7A1CA826D20033E799 /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6A1CA826D20033E799 /* stb_vorbis.c */; };
 		1AA8CF7B1CA826D20033E799 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8CF6D1CA826D20033E799 /* maximilian.cpp */; };
@@ -69,6 +77,23 @@
 
 /* Begin PBXFileReference section */
 		1A63C8F21CA88E0500195201 /* mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mode.mp3; sourceTree = "<group>"; };
+		1A99C9061CA98B3B004A218C /* ofxBaseGui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseGui.cpp; sourceTree = "<group>"; };
+		1A99C9071CA98B3B004A218C /* ofxBaseGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxBaseGui.h; sourceTree = "<group>"; };
+		1A99C9081CA98B3B004A218C /* ofxButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
+		1A99C9091CA98B3B004A218C /* ofxButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxButton.h; sourceTree = "<group>"; };
+		1A99C90A1CA98B3B004A218C /* ofxGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxGui.h; sourceTree = "<group>"; };
+		1A99C90B1CA98B3B004A218C /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroup.cpp; sourceTree = "<group>"; };
+		1A99C90C1CA98B3B004A218C /* ofxGuiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxGuiGroup.h; sourceTree = "<group>"; };
+		1A99C90D1CA98B3B004A218C /* ofxLabel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLabel.cpp; sourceTree = "<group>"; };
+		1A99C90E1CA98B3B004A218C /* ofxLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxLabel.h; sourceTree = "<group>"; };
+		1A99C90F1CA98B3B004A218C /* ofxPanel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPanel.cpp; sourceTree = "<group>"; };
+		1A99C9101CA98B3B004A218C /* ofxPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPanel.h; sourceTree = "<group>"; };
+		1A99C9111CA98B3B004A218C /* ofxSlider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSlider.cpp; sourceTree = "<group>"; };
+		1A99C9121CA98B3B004A218C /* ofxSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxSlider.h; sourceTree = "<group>"; };
+		1A99C9131CA98B3B004A218C /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSliderGroup.cpp; sourceTree = "<group>"; };
+		1A99C9141CA98B3B004A218C /* ofxSliderGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
+		1A99C9151CA98B3B004A218C /* ofxToggle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
+		1A99C9161CA98B3B004A218C /* ofxToggle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxToggle.h; sourceTree = "<group>"; };
 		1AA8CF541CA7FBB60033E799 /* AudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFile.h; sourceTree = "<group>"; };
 		1AA8CF551CA7FBB60033E799 /* AudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFile.m; sourceTree = "<group>"; };
 		1AA8CF681CA826C20033E799 /* ofxMaxim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMaxim.h; sourceTree = "<group>"; };
@@ -165,6 +190,39 @@
 				1D6058910D05DD3D006BFB54 /* mySketch.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A99C9041CA98B3B004A218C /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				1A99C9051CA98B3B004A218C /* src */,
+			);
+			name = ofxGui;
+			sourceTree = "<group>";
+		};
+		1A99C9051CA98B3B004A218C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1A99C9061CA98B3B004A218C /* ofxBaseGui.cpp */,
+				1A99C9071CA98B3B004A218C /* ofxBaseGui.h */,
+				1A99C9081CA98B3B004A218C /* ofxButton.cpp */,
+				1A99C9091CA98B3B004A218C /* ofxButton.h */,
+				1A99C90A1CA98B3B004A218C /* ofxGui.h */,
+				1A99C90B1CA98B3B004A218C /* ofxGuiGroup.cpp */,
+				1A99C90C1CA98B3B004A218C /* ofxGuiGroup.h */,
+				1A99C90D1CA98B3B004A218C /* ofxLabel.cpp */,
+				1A99C90E1CA98B3B004A218C /* ofxLabel.h */,
+				1A99C90F1CA98B3B004A218C /* ofxPanel.cpp */,
+				1A99C9101CA98B3B004A218C /* ofxPanel.h */,
+				1A99C9111CA98B3B004A218C /* ofxSlider.cpp */,
+				1A99C9121CA98B3B004A218C /* ofxSlider.h */,
+				1A99C9131CA98B3B004A218C /* ofxSliderGroup.cpp */,
+				1A99C9141CA98B3B004A218C /* ofxSliderGroup.h */,
+				1A99C9151CA98B3B004A218C /* ofxToggle.cpp */,
+				1A99C9161CA98B3B004A218C /* ofxToggle.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxGui/src;
 			sourceTree = "<group>";
 		};
 		1AA8CF821CA826D70033E799 /* ofxMaxim */ = {
@@ -269,6 +327,7 @@
 		BB16F26B0F2B646B00518274 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				1A99C9041CA98B3B004A218C /* ofxGui */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -435,9 +494,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
+				1A99C91C1CA98B3B004A218C /* ofxSlider.cpp in Sources */,
+				1A99C91A1CA98B3B004A218C /* ofxLabel.cpp in Sources */,
 				4F1859041CA86E2B00271129 /* Parameter.cpp in Sources */,
 				4F8D6B171C62AE300009F7D3 /* Particle.cpp in Sources */,
+				1A99C91E1CA98B3B004A218C /* ofxToggle.cpp in Sources */,
 				1AA8CF7A1CA826D20033E799 /* stb_vorbis.c in Sources */,
+				1A99C9181CA98B3B004A218C /* ofxButton.cpp in Sources */,
 				1AA8CF7D1CA826D20033E799 /* maxiGrains.cpp in Sources */,
 				4F28D8761C4A951400D666C5 /* ParticleGroup.cpp in Sources */,
 				1AA8CF7B1CA826D20033E799 /* maximilian.cpp in Sources */,
@@ -446,8 +509,12 @@
 				1AA8CF561CA7FBB60033E799 /* AudioFile.m in Sources */,
 				1AA8CF7F1CA826D20033E799 /* maxiBark.cpp in Sources */,
 				E4D8936F11527B74007E1F53 /* ofApp.mm in Sources */,
+				1A99C9191CA98B3B004A218C /* ofxGuiGroup.cpp in Sources */,
+				1A99C91D1CA98B3B004A218C /* ofxSliderGroup.cpp in Sources */,
+				1A99C9171CA98B3B004A218C /* ofxBaseGui.cpp in Sources */,
 				1AA8CF811CA826D20033E799 /* fft.cpp in Sources */,
 				1AA8CF7C1CA826D20033E799 /* maxiMFCC.cpp in Sources */,
+				1A99C91B1CA98B3B004A218C /* ofxPanel.cpp in Sources */,
 				1AA8CF801CA826D20033E799 /* maxiAtoms.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

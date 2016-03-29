@@ -43,7 +43,7 @@ ParticleGroup::ParticleGroup(ofVec3f startPos, ofVec3f endPos, float rndNumber) 
     target = 0;
     velocity = 0;
     
-    amplitude = Parameter(0.05, MIN_MOVEMENT, MAX_MOVEMENT);
+    amplitude = Parameter(0.01, MIN_MOVEMENT, MAX_MOVEMENT);
     noise = Parameter(0.0025, MIN_NOISE_TIMESTEP, MAX_NOISE_TIMESTEP);
 }
 
