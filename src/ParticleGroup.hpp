@@ -22,6 +22,8 @@ public:
     
     void draw();
     void updatePositions(float elapsedTime);
+    void updateAmplitude(float value);
+    void updateParticleSize(float value);
     void updateParameters(float value);
     
     vector<Particle>particles;

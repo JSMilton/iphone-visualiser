@@ -62,7 +62,7 @@ public:
     ofVec3f colorMin;
     float colorScaling = 0.0;
     float colorTimestamp = 0.0;
-    int colorMode = ColorModeRed;
+    int colorMode = ColorModeBlue;
     
     AudioFile *aFile;
     

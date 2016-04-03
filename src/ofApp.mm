@@ -42,17 +42,17 @@ void ofApp::setup(){
     
     playing = false;
     
-    colorMax = ofVec3f(MAX_COLOR, MID_COLOR, MID_COLOR);
-    colorMin = ofVec3f(MAX_COLOR, MIN_COLOR, MIN_COLOR);
+    colorMax = ofVec3f(MID_COLOR, MID_COLOR, MAX_COLOR);
+    colorMin = ofVec3f(MIN_COLOR, MIN_COLOR, MAX_COLOR);
     
     colorScaling = 1;
     colorMode = ColorModeBlue;
     
     aFile = [AudioFile new];
-    [aFile loadFile:@"chopin.mp3"];
+    [aFile loadFile:@"liszt.mp3"];
     
     // change default sizes for ofxGui so it's usable in small/high density screens
-    ofxGuiSetFont("Questrial-Regular.ttf",10,true,true);
+    ofxGuiSetFont("Arial-Regular.ttf",10,true,true);
     ofxGuiSetTextPadding(4);
     ofxGuiSetDefaultWidth(300);
     ofxGuiSetDefaultHeight(18);
@@ -104,6 +104,7 @@ void ofApp::update(){
     
     //if (playing){
         //updateVelocity();
+    
         for (size_t i = 0; i < groups.size(); i++){
             ParticleGroup &g = groups[i];
             float freq = frequencies[i%numFrequencyBands];
@@ -111,6 +112,7 @@ void ofApp::update(){
             float green = ofMap(freq, 0, MAX_DECIBEL_INPUT, colorMin.y, colorMax.y);
             float blue = ofMap(freq, 0, MAX_DECIBEL_INPUT, colorMin.z, colorMax.z);
             g.color = ofVec3f(red, green, blue);
+            g.updateAmplitude(freq);
             g.updateParameters(freq);
             g.updatePositions(ofGetElapsedTimef());
         }

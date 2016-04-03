@@ -11,9 +11,9 @@
 
 ParticleGroup::ParticleGroup(ofVec3f startPos, ofVec3f endPos, float rndNumber) {
     
-    float mod = 4;
+    float mod = 5;
     float start = -5;
-    float end = 0;
+    float end = 2;
     float maxValue = MathUtility::Gaussian(0, 0, mod);
     float minValue = MathUtility::Gaussian(-5, 0, mod);
     
@@ -43,13 +43,13 @@ ParticleGroup::ParticleGroup(ofVec3f startPos, ofVec3f endPos, float rndNumber) 
     target = 0;
     velocity = 0;
     
-    amplitude = Parameter(0.01, MIN_MOVEMENT, MAX_MOVEMENT);
-    noise = Parameter(0.0025, MIN_NOISE_TIMESTEP, MAX_NOISE_TIMESTEP);
+    amplitude = Parameter(0.015, MIN_MOVEMENT, MAX_MOVEMENT);
+    noise = Parameter(0.0015, MIN_NOISE_TIMESTEP, MAX_NOISE_TIMESTEP);
 }
 
 void ParticleGroup::updatePositions(float elapsedTime) {
     for (size_t i = 0; i < NUM_PARTICLES; i++){
-        float noise = ofNoise((float)i/NUM_PARTICLES+timeOffset, randomNumber) * amplitude.value * scalingConstants[i];
+        float noise = ofNoise((float)i/NUM_PARTICLES+timeOffset, 0) * amplitude.value * scalingConstants[i];
         ofVec3f pos = ofVec3f(particles[i].position.x, particles[i].position.y, 0).getScaled(startPosition.length()+noise);
         pos.z = particles[i].position.z;
         particles[i].position.set(pos);
@@ -58,13 +58,14 @@ void ParticleGroup::updatePositions(float elapsedTime) {
 }
 
 void ParticleGroup::updateParameters(float value){
-    amplitude.update(value);
-    noise.update(value);
     particleSize = ofMap(value, 0, MAX_DECIBEL_INPUT, MIN_PARTICLE_SIZE, MAX_PARTICLE_SIZE);
-    
+    noise.update(value);
     timeOffset += noise.value;
 }
 
+void ParticleGroup::updateAmplitude(float value){
+    amplitude.update(value);
+}
 
 void ParticleGroup::draw() {
     vboMesh.draw();
