@@ -19,10 +19,10 @@ void ofApp::setup(){
     shader.load("shader");
     
     camera.setDrag(0);
-    camera.setDistance(distance/1.5);
+    camera.setDistance(distance/2);
     camera.setTarget(ofVec3f(0,0,0));
     
-    ofVec3f initialPosition = camera.getPosition().getRotated(2, ofVec3f(0.5,1,1));
+    ofVec3f initialPosition = camera.getPosition().getRotated(0.6, ofVec3f(0.5,0.5,0));
     
     camera.setPosition(initialPosition);
     camera.lookAt(ofVec3f(0));
@@ -49,7 +49,7 @@ void ofApp::setup(){
     colorMode = ColorModeBlue;
     
     aFile = [AudioFile new];
-    [aFile loadFile:@"liszt.mp3"];
+    [aFile loadFile:@"chopin.mp3"];
     
     // change default sizes for ofxGui so it's usable in small/high density screens
     ofxGuiSetFont("Arial-Regular.ttf",10,true,true);
@@ -64,7 +64,7 @@ void ofApp::changeColor() {
     if (ofGetElapsedTimef() > colorTimestamp+COLOR_TIMER){
         colorTimestamp = ofGetElapsedTimef();
         colorMode++;
-        if (colorMode > 2){
+        if (colorMode > 1){
             colorMode = 0;
         }
         
@@ -80,10 +80,6 @@ void ofApp::changeColor() {
             case ColorModeRed:
                 colorMax.set(newMax, MID_COLOR, oldMax);
                 colorMin.set(newMin, MIN_COLOR, oldMin);
-                break;
-            case ColorModeGreen:
-                colorMax.set(oldMax, newMax, MID_COLOR);
-                colorMin.set(oldMin, newMin, MIN_COLOR);
                 break;
             case ColorModeBlue:
                 colorMax.set(MID_COLOR, oldMax, newMax);

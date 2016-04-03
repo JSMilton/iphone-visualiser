@@ -17,7 +17,6 @@ static const float outputScaling = 1.5;
 
 typedef enum {
     ColorModeRed = 0,
-    ColorModeGreen,
     ColorModeBlue
 }ColorMode;
 

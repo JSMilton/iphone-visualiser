@@ -11,9 +11,9 @@
 
 ParticleGroup::ParticleGroup(ofVec3f startPos, ofVec3f endPos, float rndNumber) {
     
-    float mod = 5;
+    float mod = 7;
     float start = -5;
-    float end = 2;
+    float end = 0;
     float maxValue = MathUtility::Gaussian(0, 0, mod);
     float minValue = MathUtility::Gaussian(-5, 0, mod);
     
@@ -49,7 +49,7 @@ ParticleGroup::ParticleGroup(ofVec3f startPos, ofVec3f endPos, float rndNumber) 
 
 void ParticleGroup::updatePositions(float elapsedTime) {
     for (size_t i = 0; i < NUM_PARTICLES; i++){
-        float noise = ofNoise((float)i/NUM_PARTICLES+timeOffset, 0) * amplitude.value * scalingConstants[i];
+        float noise = ofNoise((float)i/NUM_PARTICLES+timeOffset, randomNumber) * amplitude.value * scalingConstants[i];
         ofVec3f pos = ofVec3f(particles[i].position.x, particles[i].position.y, 0).getScaled(startPosition.length()+noise);
         pos.z = particles[i].position.z;
         particles[i].position.set(pos);
