@@ -43,6 +43,8 @@ public:
     void populateFrequencies();
     void changeColor();
     
+    void thresholdChanged(float &threshold);
+    
     ofImage particleImage;
     ofShader shader;
     vector<ParticleGroup> groups;
@@ -66,8 +68,9 @@ public:
     AudioFile *aFile;
     
     ofxPanel gui;
-    ofxFloatSlider slider;
-    
+    ofParameter<float> threshold;
+    ofParameter<float> movementScale;
+    ofParameter<float> noiseScale;
     
 };
 

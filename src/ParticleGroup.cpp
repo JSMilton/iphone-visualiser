@@ -11,9 +11,9 @@
 
 ParticleGroup::ParticleGroup(ofVec3f startPos, ofVec3f endPos, float rndNumber) {
     
-    float mod = 7;
+    float mod = 5;
     float start = -5;
-    float end = 0;
+    float end = 5;
     float maxValue = MathUtility::Gaussian(0, 0, mod);
     float minValue = MathUtility::Gaussian(-5, 0, mod);
     
@@ -44,7 +44,7 @@ ParticleGroup::ParticleGroup(ofVec3f startPos, ofVec3f endPos, float rndNumber) 
     velocity = 0;
     
     amplitude = Parameter(0.015, MIN_MOVEMENT, MAX_MOVEMENT);
-    noise = Parameter(0.0015, MIN_NOISE_TIMESTEP, MAX_NOISE_TIMESTEP);
+    noise = Parameter(0.001, MIN_NOISE_TIMESTEP, MAX_NOISE_TIMESTEP);
 }
 
 void ParticleGroup::updatePositions(float elapsedTime) {
@@ -58,12 +58,13 @@ void ParticleGroup::updatePositions(float elapsedTime) {
 }
 
 void ParticleGroup::updateParameters(float value){
-    particleSize = ofMap(value, 0, MAX_DECIBEL_INPUT, MIN_PARTICLE_SIZE, MAX_PARTICLE_SIZE);
+    particleSize = ofMap(value, 0, maxDecibel, MIN_PARTICLE_SIZE, MAX_PARTICLE_SIZE);
     noise.update(value);
     timeOffset += noise.value;
 }
 
 void ParticleGroup::updateAmplitude(float value){
+    amplitude.smoothingValue = movementScaling;
     amplitude.update(value);
 }
 

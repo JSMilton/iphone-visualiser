@@ -33,6 +33,8 @@ public:
     Parameter amplitude;
     Parameter noise;
     float particleSize;
+    float maxDecibel;
+    float movementScaling;
     
 private:
     float startZ = 200.0;

@@ -20,9 +20,9 @@ public:
     void update(float nextValue);
     
     float value;
+    float smoothingValue;
     
 private:
-    float smoothingValue;
     float maxValue;
     float minValue;
 };

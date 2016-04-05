@@ -49,15 +49,18 @@ void ofApp::setup(){
     colorMode = ColorModeBlue;
     
     aFile = [AudioFile new];
-    [aFile loadFile:@"chopin.mp3"];
+    [aFile loadFile:@"liszt.mp3"];
     
     // change default sizes for ofxGui so it's usable in small/high density screens
-    ofxGuiSetFont("Arial-Regular.ttf",10,true,true);
+    ofxGuiSetFont("Questrial-Regular.ttf",14,true,true);
     ofxGuiSetTextPadding(4);
-    ofxGuiSetDefaultWidth(300);
-    ofxGuiSetDefaultHeight(18);
+    ofxGuiSetDefaultWidth(ofGetWidth());
+    ofxGuiSetDefaultHeight(50);
     
     gui.setup();
+    gui.add(threshold.set("threshold", 30, 15, 75));
+    gui.add(movementScale.set("movement", 0.01, 0.001, 0.1));
+    
 }
 
 void ofApp::changeColor() {
@@ -104,10 +107,12 @@ void ofApp::update(){
         for (size_t i = 0; i < groups.size(); i++){
             ParticleGroup &g = groups[i];
             float freq = frequencies[i%numFrequencyBands];
-            float red = ofMap(freq, 0, MAX_DECIBEL_INPUT, colorMin.x, colorMax.x);
-            float green = ofMap(freq, 0, MAX_DECIBEL_INPUT, colorMin.y, colorMax.y);
-            float blue = ofMap(freq, 0, MAX_DECIBEL_INPUT, colorMin.z, colorMax.z);
+            float red = ofMap(freq, 0, threshold, colorMin.x, colorMax.x);
+            float green = ofMap(freq, 0, threshold, colorMin.y, colorMax.y);
+            float blue = ofMap(freq, 0, threshold, colorMin.z, colorMax.z);
             g.color = ofVec3f(red, green, blue);
+            g.maxDecibel = threshold;
+            g.movementScaling = movementScale;
             g.updateAmplitude(freq);
             g.updateParameters(freq);
             g.updatePositions(ofGetElapsedTimef());
@@ -129,6 +134,8 @@ void ofApp::draw(){
     particleImage.unbind();
     shader.end();
     camera.end();
+    
+    gui.draw();
 }
 
 //--------------------------------------------------------------
