@@ -49,7 +49,7 @@ void ofApp::setup(){
     colorMode = ColorModeBlue;
     
     aFile = [AudioFile new];
-    [aFile loadFile:@"liszt.mp3"];
+    [aFile loadFile:@"chopin.mp3"];
     
     // change default sizes for ofxGui so it's usable in small/high density screens
     ofxGuiSetFont("Questrial-Regular.ttf",14,true,true);
